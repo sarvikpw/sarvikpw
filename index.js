@@ -42,8 +42,9 @@ const questions = [
 ];
 
 function randomInt(max) {
-    return Math.floor(Math.random() * (max ));
+    return Math.floor(Math.random() * (max));
 }
+let question = "";
 function checkSelected() {
     const radios = document.getElementsByName('groups'); // Get all radio buttons with name 'options'
     let selectedValue;
@@ -56,22 +57,43 @@ function checkSelected() {
     }
 
     if (selectedValue) {
-            if (selectedValue === "group201") group = group201;
-            else if (selectedValue === "group202") group = group202;
-            else if (selectedValue === "group203") group = group203;
-            else if (selectedValue === "group204") group = group204;
-            else if (selectedValue === "group205") group = group205;
-            let question = questions[randomInt(questions.length)];
-            let student1 = group[randomInt(questions.length)].replace(/\s+/g, '');
-            let student2 = group[randomInt(questions.length)].replace(/\s+/g, '');
-            let student3 = group[randomInt(questions.length)].replace(/\s+/g, '');
-            let displayMessage = "@" + student1 + " @" + student2 + " @" + student3 + " <br> " + question;
-            document.getElementById('output').innerHTML = displayMessage;
-           console.log(displayMessage)
+        if (selectedValue === "group201") group = group201;
+        else if (selectedValue === "group202") group = group202;
+        else if (selectedValue === "group203") group = group203;
+        else if (selectedValue === "group204") group = group204;
+        else if (selectedValue === "group205") group = group205;
+        // Function to get unique random students
+        function getUniqueRandomStudents(group, numStudents) {
+            const selectedStudents = new Set();
+
+            while (selectedStudents.size < numStudents) {
+                const randomIndex = randomInt(group.length);
+                selectedStudents.add(group[randomIndex].replace(/\s+/g, ''));
+            }
+
+            return Array.from(selectedStudents);
+        }
+
+        const numStudents = 3;
+        const uniqueStudents = getUniqueRandomStudents(group, numStudents);
+        const switchElement = document.getElementById("flexSwitchCheckDefault");
+
+        if (switchElement.checked) {
+            question = "Be ready for the session at 10PM <br> All of you must join";
+            console.log(question);
+
+        } else {
+            question = questions[randomInt(questions.length)];
+        }
+        const displayMessage = "@" + uniqueStudents.join(" @") + " <br> " + " <br> " + question;
+
+        document.getElementById('output').innerHTML = displayMessage;
+        console.log(displayMessage)
     } else {
         console.log('No option selected');
     }
 }
+
 function copyToClipboard() {
     const messageDiv = document.getElementById('output'); // Get the div element
     const messageText = messageDiv.innerText; // Get the text content of the div
