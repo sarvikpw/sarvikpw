@@ -38,8 +38,59 @@ const questions = [
     "How do you tackle negative marking during practice tests?",
     "What’s your current schedule for mock tests and how are you performing in them?",
     "What’s the toughest question you’ve solved recently, and how did you approach it?",
-    "How do you balance your JEE preparation with other activities or interests?"
+    "How do you balance your JEE preparation with other activities or interests?",
+    "What’s your favorite topic in Physics, and how do you plan to master it?",
+    "How do you approach solving numerical problems in Chemistry?",
+    "What’s your strategy for tackling lengthy questions in Mathematics?",
+    "Which Chemistry topic do you find the trickiest, and how are you working on it?",
+    "What study techniques have helped you understand complex Physics concepts?",
+    "Have you found any interesting tricks for solving JEE-level Math problems?",
+    "How do you remember all the chemical reactions in Organic Chemistry?",
+    "What’s your approach to mastering Calculus?",
+    "How do you handle multiple-choice questions in Physics without falling into traps?",
+    "How do you ensure that you remember formulas during the exam?",
+    "What’s your study routine for revising Physical Chemistry equations?",
+    "Which past year JEE question was the most challenging for you, and how did you overcome it?",
+    "How do you prioritize your time when studying three subjects simultaneously?",
+    "What’s your strategy for solving coordinate geometry problems faster?",
+    "Have you developed any shortcuts for quick calculations in Physics or Chemistry?",
+    "How do you practice to reduce silly mistakes in Mathematics?",
+    "What resources do you rely on for understanding difficult Physics concepts?",
+    "How do you approach Chemistry when you’re stuck on a question for too long?",
+    "What’s the hardest integral problem you’ve solved recently, and what method did you use?",
+    "How do you keep your Physics formulas organized for quick revision?",
+    "What’s your secret for acing trigonometry in JEE Mathematics?",
+    "How do you manage time between revising Physics theory and solving numericals?",
+    "What’s your biggest weakness in Chemistry, and how are you addressing it?",
+    "How do you approach multi-step problems in Mathematics?",
+    "What is your method for understanding and remembering inorganic chemistry facts?",
+    "What’s the most effective way you’ve found to solve Physics problems involving vectors?",
+    "How do you stay focused during long study sessions, especially for tough subjects?",
+    "What’s your favorite part of JEE Physics, and why?",
+    "What’s the most effective strategy you’ve used to memorize periodic table trends?",
+    "How do you stay calm when you encounter a challenging Physics question?",
+    "What’s your go-to method for mastering Probability in Mathematics?",
+    "How do you approach Physics when you’re struggling to understand the concepts?",
+    "What’s your plan for improving your Chemistry scores in the next mock test?",
+    "How do you organize your study notes for each subject?",
+    "What’s your approach to learning mechanics in Physics?",
+    "How do you make sure to cover all important JEE Advanced topics during revision?",
+    "Which Chemistry books or online resources have been most helpful for you?",
+    "What’s the most important Physics experiment you’ve studied, and how did it help your understanding?",
+    "How do you manage multiple choice questions in Chemistry with negative marking?",
+    "What’s your strategy for mastering electrostatics and current electricity?",
+    "How do you handle conceptual doubts in Chemistry during practice?",
+    "What’s your approach to solving algebra problems in Mathematics quickly?",
+    "How often do you take breaks during long study sessions, and how do they help?",
+    "How do you manage stress when Physics problems seem overwhelming?",
+    "What is your favorite Chemistry chapter, and how are you mastering it?",
+    "What’s your strategy for solving optics and wave-related problems in Physics?",
+    "How do you revise multiple chapters for Mathematics in one day?",
+    "How do you approach memorizing Chemistry equations for the long term?",
+    "What is your strategy for solving thermodynamics problems in Physics?",
+    "What’s your current approach to mastering physical chemistry?"
 ];
+
 
 function randomInt(max) {
     return Math.floor(Math.random() * (max));
@@ -77,12 +128,36 @@ function checkSelected() {
         const numStudents = 3;
         const uniqueStudents = getUniqueRandomStudents(group, numStudents);
         const switchElement = document.getElementById("flexSwitchCheckDefault");
+        const switchElement2 = document.getElementById("flexSwitchCheckDefault2");
 
-        if (switchElement.checked) {
-            question = "Be ready for the session at 10PM <br> All of you must join";
-            console.log(question);
 
-        } else {
+
+        // Assuming switchElement and switchElement2 are your checkboxes
+switchElement.addEventListener('change', function() {
+    if (switchElement.checked) {
+        switchElement2.checked = false;  // Uncheck the second switch
+    }
+});
+switchElement2.addEventListener('change', function() {
+    if (switchElement2.checked) {
+        switchElement.checked = false;  // Uncheck the first switch
+    }
+});
+
+
+
+
+
+if (switchElement.checked) {
+    question = "Be ready for the session at 10PM <br> All of you must join";
+    console.log(question);
+
+}else if (switchElement2.checked) {
+    question = "Guys provide me the feedback for the tasks assigned to you today morning <br> Have you completed those and did you face any difficulties?";
+    console.log(question);
+
+}
+         else {
             question = questions[randomInt(questions.length)];
         }
         const displayMessage = "@" + uniqueStudents.join(" @") + " <br> " + " <br> " + question;
