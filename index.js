@@ -14,6 +14,97 @@ const group205 = [
     "Shaivya Pandey", "Sneha Das", "Santosh Preksha", "Gunjan Sharma", "Adarsh Kumar Dubey", "Om Hello", "Prisha Kumar", "Yash", "Aditya Kumar Verma", "Anas", "Harmanjit Singh Lubana", "Pushpraj Rawat", "Mohammad Adnan", "Kamayani Lohani", "Yuvraj", "Samarth Class", "Vansh", "Dhruv Nanwani", "Omjit Mitra", "Harkeerat Pruthi", "Sagar Baranwal", "Jayesh Parmar", "Shlok Pandey", "Rajveer", "Piyush Patil", "Soyam Behera", "Aachal Damedher", "Shashwat", "Aditya Chakraborty", "Iit T", "Shaurya Pratap Singh", "Abhinav Kasa", "Its Hrishikesh From Assam", "Avni Agarwal", "Lakshita", "Yuvaraj S K", "Moomin", "Rajwanti Mam", "Divyanshu Priye", "Nandish Ragati", "Shiksha Rathore", "Rajanya Biswas", "Divit Jangir", "Somendra Kumar Shyam", "Gokul", "Aditi Rajendra Dhere", "Shardul Vikram", "Aryan Sharma", "Om Kathar", "Rishabh Yadav", "Kartik Srivastava", "Sakshi Thete", "Raju Chakraborty", "Manshi Bharti", "Jk Jaswal", "Reedip Biswas", "Simran Kumari", "Dhairya Tyagi", "Pawan Papney", "Aditya Raj", "Anay", "Shourya Gupta", "Surya Pratap Singh", "Satyam Kumar", "Dibyanshu Gouda", "Nayan Sonavane", "Harshita Sharma", "Yuvraj", "Adit Maji", "Chintaman Sanap", "Shaivee Chauhan", "Shivansh Gupta", "Ishaan Sonawane", "Mr Genius", "Aim Iitb Ayush", "Shivam Singh", "Keshav Bansal", "Yashasvi", "Sarthak Deval", "Infinite Void", "Vidisha Verma", "Tanmay", "Plaksha Subhkarni", "Sreyansi Das", "Pratham Jain", "Bandana Kumari", "Ayush Kumar Mishra", "Ahir Anand", "Pratham", "Abhinav Yadav", "Rhiddhimaan Paul", "Siddhartha Das", "Naman Mendiratta", "Brajesh Tiwary", "Spandan", "Sriza Sinha Ray", "Ayush Upadhyay", "Susmita Samadder", "Ram Singh", "Ankur Raj", "Om Jagwani", "Prince Verma", "Satyam Dubey", "Rijoy Biswas", "Drashya Patidar", "Neev", "Manasvi Shrivastava", "Kvk Kanishk", "Harshita Pandey", "MPS Apps", "Anwesha Majumder", "Anushtha Singh", "Tannistha Ghosh", "Prateek Kumar Mishra", "Shivansh", "Satyaprakash Yadav", "Bhavnoor Singh Bedi", "Rajdeep Poddar", "Keerthi", "Pulkit Ratta", "Aditya Saxena", "Nehchal Kaur", "Thrisha S Suvarna", "Arya Tarafder", "Ratan Vinnu", "Divyanshu", "Tamanna Rawat", "Naitik Jaiswal"
 ];
 const questions = [
+    "What topic did you dive into today, and what new insights did you gain?",
+    "Can you explain a challenging concept you recently mastered?",
+    "What’s your study goal for this week? How will you measure your progress?",
+    "How do you handle the pressure when faced with multiple exams or deadlines?",
+    "What’s a unique study technique that works well for you?",
+    "What’s your approach for tackling difficult physics derivations?",
+    "What did you learn from the mistakes in your last practice test?",
+    "How would you rank the difficulty level of each subject? Why?",
+    "What’s a motivational quote or mantra that keeps you going?",
+    "How has your study routine changed over the past few months?",
+    "Have you encountered any specific Physics or Math theorems that you found fascinating?",
+    "Which Chemistry reactions do you find hardest to remember? How are you tackling them?",
+    "How often do you review your past mistakes, and what’s your strategy for avoiding them?",
+    "What’s your main focus in terms of improvement this month?",
+    "How do you plan your study sessions to keep them effective?",
+    "What’s your revision strategy for organic, inorganic, and physical chemistry?",
+    "Which topic do you wish you could learn faster, and why?",
+    "What’s a common misconception in Physics that you recently clarified?",
+    "How are you ensuring you don’t forget previously learned material?",
+    "Have you created any personal study hacks or shortcuts?",
+    "What kind of mock test scores are you currently aiming for?",
+    "What’s your biggest takeaway from your preparation so far?",
+    "How do you keep track of which topics need extra practice?",
+    "What’s the most interesting problem you’ve solved lately?",
+    "How do you manage doubts that come up during self-study?",
+    "Have you joined any study groups or communities? How’s the experience?",
+    "What time of day do you find yourself most focused?",
+    "How do you approach problem-solving in mathematics to minimize errors?",
+    "What do you do when you feel unmotivated to study?",
+    "Have you discovered any new learning resources or books recently?",
+    "How do you revise concepts to ensure they stay fresh in your memory?",
+    "What’s the hardest Physics formula you’ve memorized, and how did you do it?",
+    "What’s your secret to staying consistent with your study plan?",
+    "How do you incorporate feedback from teachers or mentors?",
+    "What’s your approach for mastering 3D geometry or complex algebra topics?",
+    "How do you review your weak points in Chemistry?",
+    "How do you structure your day when preparing for tests and revisions?",
+    "What’s the most helpful advice you’ve received about JEE prep?",
+    "What’s one recent breakthrough you’ve had in a tough topic?",
+    "How do you tackle problem-solving in thermodynamics?",
+    "How often do you test yourself on what you’ve learned recently?",
+    "What has been the most rewarding part of your study journey so far?",
+    "How do you approach large and time-consuming problems?",
+    "What’s your strategy for balancing Chemistry, Physics, and Mathematics?",
+    "How do you manage to stay focused for extended study hours?",
+    "What are some practical tips you have for staying motivated?",
+    "Have you set any specific goals for the next mock test?",
+    "What’s the most challenging aspect of your study schedule?",
+    "How are you working on improving your speed and accuracy?",
+    "What’s the most effective technique you’ve found for revision?",
+    "How do you plan to maintain your momentum in the final months?",
+    "What’s the hardest Chemistry concept you've tackled recently?",
+    "What’s your approach for answering multi-step problems in Math?",
+    "How do you manage stress during intense study periods?",
+    "What’s a recent success story you have from a difficult problem?",
+    "How do you handle tricky multiple-choice questions effectively?",
+    "What’s one area you’re focusing on to boost your Physics score?",
+    "How do you tackle conceptual doubts that come up in Chemistry?",
+    "What’s your secret for retaining complex Math formulas?",
+    "How do you make time for rest and relaxation amidst your prep?",
+    "What study apps or online resources have you found helpful?",
+    "What’s your approach to acing JEE’s toughest questions?",
+    "What topics do you prioritize during intense revision phases?",
+    "What’s your go-to technique for staying calm under pressure?",
+    "How do you pace yourself during mock tests for best results?",
+    "How has your problem-solving approach evolved over time?",
+    "What’s a recent mistake you learned from during practice?",
+    "What’s your plan for mastering advanced Chemistry equations?",
+    "What are your thoughts on competitive exam stress?",
+    "What’s your favorite study tool or resource?",
+    "How do you review your daily or weekly study progress?",
+    "What’s your biggest strength, and how are you building on it?",
+    "How do you plan your study breaks to stay refreshed?",
+    "What’s the hardest part about balancing study and other activities?",
+    "What’s a recent concept you learned that felt rewarding?",
+    "What do you do differently when studying your strongest vs. weakest subject?",
+    "What’s your approach for understanding Chemistry mechanisms?",
+    "How do you stay consistent with revisiting challenging topics?",
+    "What was your approach for solving the last hard mock test question?",
+    "What’s your take on balancing theory and practice in Physics?",
+    "How do you deal with doubts that slow down your study flow?",
+    "What’s the best way you’ve found to manage your study schedule?",
+    "How do you handle time-consuming calculations in Math or Chemistry?",
+    "What’s a recent achievement that made you feel prepared for the exam?",
+    "How do you structure your notes for maximum revision impact?",
+    "What’s the toughest subject for you, and how are you working on it?",
+    "What’s your biggest study challenge, and how are you overcoming it?",
+    "How do you maximize your focus for lengthy study sessions?",
+    "How do you ensure consistent progress in all three subjects?",
+    "What’s one skill you’re working on to excel in JEE?",
+    "What motivates you to push through difficult study days?",
     "What topic did you study today, and how confident do you feel about it?",
     "How did your last mock test go? What was your score?",
     "What is your strongest subject, and why?",
@@ -113,8 +204,10 @@ function checkSelected() {
         else if (selectedValue === "group203") group = group203;
         else if (selectedValue === "group204") group = group204;
         else if (selectedValue === "group205") group = group205;
+        else if (selectedValue === "all") group = all;
         // Function to get unique random students
         function getUniqueRandomStudents(group, numStudents) {
+            if (group === all) { return "@all"; }
             const selectedStudents = new Set();
 
             while (selectedStudents.size < numStudents) {
@@ -129,56 +222,75 @@ function checkSelected() {
         const uniqueStudents = getUniqueRandomStudents(group, numStudents);
         const switchElement = document.getElementById("flexSwitchCheckDefault");
         const switchElement2 = document.getElementById("flexSwitchCheckDefault2");
-
+        const switchElement3 = document.getElementById("flexSwitchCheckDefault3");
+        let displayMessage = "";
 
 
         // Assuming switchElement and switchElement2 are your checkboxes
-switchElement.addEventListener('change', function() {
-    if (switchElement.checked) {
-        switchElement2.checked = false;  // Uncheck the second switch
-    }
-});
-switchElement2.addEventListener('change', function() {
-    if (switchElement2.checked) {
-        switchElement.checked = false;  // Uncheck the first switch
-    }
-});
+        switchElement.addEventListener('change', function () {
+            if (switchElement.checked) {
+                switchElement2.checked = false;  // Uncheck the second switch
+            }
+        });
+        switchElement2.addEventListener('change', function () {
+            if (switchElement2.checked) {
+                switchElement.checked = false;  // Uncheck the first switch
+            }
+        });
 
+        if (switchElement.checked) {
+            question = "Be ready for the session at 10PM <br> All of you must join";
 
-
-
-
-if (switchElement.checked) {
-    question = "Be ready for the session at 10PM <br> All of you must join";
-    console.log(question);
-
-}else if (switchElement2.checked) {
-    question = "Guys provide me the feedback for the tasks assigned to you today morning <br> Have you completed those and did you face any difficulties?";
-    console.log(question);
-
-}
-         else {
+        } else if (switchElement2.checked) {
+            question = "Guys provide me the feedback for the tasks assigned to you today morning <br> Have you completed those and did you face any difficulties?";
+        } else if (switchElement3.checked) {
+            question = "ask if you have any doubts or need any help";
+        }
+        else {
             question = questions[randomInt(questions.length)];
         }
-        const displayMessage = "@" + uniqueStudents.join(" @") + " <br> " + " <br> " + question;
 
+        if (switchElement2.checked && group === all) { displayMessage = "@all <br><br>" + question; }
+        else {
+            displayMessage = (group === all ? "Guys " : "@" + uniqueStudents.join(" @") + " <br><br> ") + question;
+        }
         document.getElementById('output').innerHTML = displayMessage;
         console.log(displayMessage)
-    } else {
-        console.log('No option selected');
     }
 }
-
 function copyToClipboard() {
     const messageDiv = document.getElementById('output'); // Get the div element
     const messageText = messageDiv.innerText; // Get the text content of the div
 
     // Copy the text to the clipboard
     navigator.clipboard.writeText(messageText).then(() => {
-        alert('Message copied to clipboard!'); // Alert on successful copy
+        // Create a custom alert element
+        const customAlert = document.createElement('div');
+        customAlert.innerText = 'Message copied to clipboard!';
+        customAlert.style.position = 'fixed';
+        customAlert.style.bottom = '20px';
+        customAlert.style.right = '20px';
+        customAlert.style.padding = '10px 20px';
+        customAlert.style.backgroundColor = '#4caf50';
+        customAlert.style.color = '#fff';
+        customAlert.style.borderRadius = '5px';
+        customAlert.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.3)';
+        customAlert.style.zIndex = '1000';
+        document.body.appendChild(customAlert);
+
+        // Automatically remove the alert after 1 second
+        setTimeout(() => {
+            customAlert.style.transition = 'opacity 0.5s';
+            customAlert.style.opacity = '0';
+            setTimeout(() => {
+                document.body.removeChild(customAlert);
+            }, 500);
+        }, 1000);
     }).catch(err => {
         console.error('Failed to copy: ', err); // Log error if it fails
     });
+
 }
+
 
 
